@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="userService" class="com.epam.controller.impl.UserServiceImpl"/>
+    <bean name="sellerService" class="com.epam.controller.impl.SellerServiceImpl"/>
+    <bean name="deliveryService" class="com.epam.controller.impl.DeliveryServiceImpl"/>
+    <bean name="product" class="com.epam.beans.Product" scope="prototype"/>
+    <bean name="order" class="com.epam.beans.Order" scope="prototype"/>
+
+</beans>
